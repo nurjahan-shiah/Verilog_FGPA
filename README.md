@@ -1,6 +1,6 @@
 # Verilog_FGPA_Digital Clock
 
-Design description: 
+Design description: //
 A digital clock has been designed with Verilog and DE10 Lite. This clock has four(4) functionalities and the ‘mode’ module helps to select between these functionalities as described below: 
 
 A base clock: Right after starting the program, HH (HEX5 and HEX4) will start blinking indicating the user needs to input time. Users can use SW[5:0] to input time. KEY[0] will be used to lock in time for HH, and MM(HEX3 and HEX2) will blink and same procedure for SS(HEX1 and HEX0) with KEY[0] locking in each time.  SW[7] will lock-in the time in HH:MM:SS format (24 h format) and SW[9] will initiate the clock mode. KEY[1] button will be used for start-pause-resume. 
